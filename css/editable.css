@@ -1,0 +1,19 @@
+[data-toggle] {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+[data-text-item] {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s ease;
+
+  outline: 1px solid transparent;
+}
+
+[data-text-item]:hover {
+  box-shadow:
+    0 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 11px rgba(0, 0, 0, 0.1);
+}

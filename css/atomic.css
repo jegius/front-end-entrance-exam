@@ -1,0 +1,39 @@
+.br-6 {
+  border-radius: 6px;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.br-12 {
+  border-radius: 12px;
+}
+
+.card {
+  background: #f0f0f0;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  background-color: #3f51b5;
+  padding: 5px;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: fit-content;
+}

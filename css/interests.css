@@ -1,0 +1,9 @@
+.interests__tags {
+  margin-top: 1rem;
+
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}

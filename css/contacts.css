@@ -1,0 +1,20 @@
+.contact {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__text {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+.contact__link {
+  color: #dddddd;
+  font-size: 0.625rem;
+  line-height: 150%;
+}

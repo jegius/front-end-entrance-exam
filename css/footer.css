@@ -1,0 +1,12 @@
+.action-bar {
+  background-color: #7777773b;
+  padding: 10px;
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 400px;
+}
