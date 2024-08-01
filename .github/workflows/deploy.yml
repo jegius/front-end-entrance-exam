@@ -1,0 +1,24 @@
+name: Deploy to GithubPages
+
+on: pull_request
+permissions:
+  contents: write
+jobs:
+  deploy-to-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Packages
+        run: |
+          npm ci
+
+      - name: Build prod
+        run: |
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
