@@ -1,8 +1,7 @@
 import {createCvBlock} from "./utils.js";
 
 export const renderId = (name, post) => {
-    const profileId = createCvBlock('profile__id');
-    profileId.innerHTML = `
+    const content = `
         <span class="profile__hello">
             Hello 👋🏻 I’m
           </span>
@@ -12,8 +11,9 @@ export const renderId = (name, post) => {
           <p class="profile__post">
             ${post}
           </p>
-    `
-    return profileId;
+    `;
+
+    return createCvBlock('profile__id', content);
 };
 
 export const renderImage = () => {
@@ -26,8 +26,7 @@ export const renderImage = () => {
 }
 
 export const renderLanguages = (languages) => {
-    const profileLanguages = createCvBlock('profile__languages');
-    profileLanguages.innerHTML = `
+    const content = `
       <h2 class="cv-block__title">
           Languages
       </h2>
@@ -44,5 +43,5 @@ export const renderLanguages = (languages) => {
           </ul>
       </div>`
 
-    return profileLanguages;
+    return createCvBlock('profile__languages', content);
 };
