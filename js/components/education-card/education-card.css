@@ -1,0 +1,107 @@
+.education__card {
+  padding: 8px;
+  background-color: #ffffff;
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 116px;
+}
+
+.education__tags {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  color: #149063;
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+
+.education__card,
+.education__tags {
+  transition: all 0.5s ease;
+}
+
+.favourite-marker {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 59px;
+  padding: 2px 6px;
+  opacity: 0;
+  z-index: 10;
+}
+
+.education__card:hover .favourite-marker {
+  opacity: 0.5;
+}
+
+.favourite-marker.active {
+  opacity: 1;
+}
+
+.education__card:has(.favourite-marker.active) {
+  background-color: var(--accent);
+  color: white;
+}
+
+.education__card:has(.favourite-marker.active) .education__tags {
+  color: white;
+}
+
+.education__dates {
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 150%;
+}
+
+.date_start,
+.date_end {
+  min-width: 30px;
+}
+
+.education__title {
+  margin-top: 8px;
+
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 150%;
+}
+
+.education__tag:before {
+  content: "#";
+}
+.education__link:link,
+.education__link:visited {
+  color: #149063;
+  text-decoration: none;
+}
+
+.education__link:hover {
+  border-bottom: #149063 solid 1px;
+}
+
+.education__school-name {
+  margin-top: auto;
+
+  font-weight: 400;
+  font-size: 0.5rem;
+  line-height: 150%;
+}
+
+@media (width > 595px) {
+  .education__card {
+    width: 100%;
+  }
+}
+
+@media (width < 595px) {
+  .education__card {
+    width: 100%;
+    min-height: auto;
+  }
+  .education__school-name {
+    margin-top: 1rem;
+  }
+}

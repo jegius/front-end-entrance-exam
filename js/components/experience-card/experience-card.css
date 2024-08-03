@@ -1,0 +1,83 @@
+.experience__item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 0.5rem;
+
+  background-color: #ffffff;
+
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease,
+    order 1s;
+}
+
+.experience__item:has(.tag-most-recent.active) {
+  background: var(--accent);
+  color: #ffffff;
+  order: -1;
+}
+
+.dates {
+  font-weight: 500;
+  font-size: 0.5rem;
+  line-height: 150%;
+}
+
+.tag-most-recent {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 59px;
+  padding: 0.125rem 0.375rem;
+
+  height: 16px;
+
+  background: var(--tag-most-recent-bg);
+  color: var(--tag-most-recent-color);
+
+  font-weight: 500;
+  font-size: 0.5rem;
+
+  align-items: center;
+}
+
+.tag-most-recent:hover {
+  filter: invert(100%);
+}
+
+.experience__item:hover .tag-most-recent:not(.active) {
+  display: flex;
+  background: transparent;
+  color: #a8a8a8;
+  border: 1px solid #a8a8a8;
+}
+
+.tag-most-recent.active {
+  display: flex;
+}
+
+.post {
+  grid-column: 1/2;
+}
+
+.post__title {
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 150%;
+}
+
+.post__description {
+  font-size: 0.5rem;
+  line-height: 150%;
+}
+
+.responsibilities {
+  list-style-type: disc;
+  grid-column: 2/5;
+
+  font-size: 0.5rem;
+  line-height: 150%;
+}

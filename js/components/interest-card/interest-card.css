@@ -1,0 +1,14 @@
+.interests__tag {
+  padding: 4px 10px;
+
+  height: 23px;
+
+  background: #ffffff;
+  border-radius: 40px;
+
+  font-size: 0.625rem;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
