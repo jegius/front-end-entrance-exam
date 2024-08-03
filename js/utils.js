@@ -5,3 +5,9 @@
 export const fetchData = async () => {
     return await fetch('/mockCv.json')
 };
+
+export const createCvBlock = (className) => {
+    const cvBlock = document.createElement('div');
+    cvBlock.classList.add(className, 'cv-block');
+    return cvBlock;
+}

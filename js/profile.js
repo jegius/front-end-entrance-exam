@@ -1,6 +1,7 @@
+import {createCvBlock} from "./utils.js";
+
 export const renderId = (name, post) => {
-    const profileId = document.createElement('div');
-    profileId.classList.add('profile__id', 'cv-block');
+    const profileId = createCvBlock('profile__id');
     profileId.innerHTML = `
         <span class="profile__hello">
             Hello 👋🏻 I’m
@@ -25,9 +26,7 @@ export const renderImage = () => {
 }
 
 export const renderLanguages = (languages) => {
-    const profileLanguages = document.createElement('div');
-    profileLanguages.classList.add('profile__languages', 'cv-block');
-
+    const profileLanguages = createCvBlock('profile__languages');
     profileLanguages.innerHTML = `
       <h2 class="cv-block__title">
           Languages
