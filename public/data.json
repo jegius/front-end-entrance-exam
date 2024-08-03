@@ -1,0 +1,173 @@
+{
+  "personal": {
+    "data": {
+      "name": "Novitskiy Vladislav",
+      "post": "JS Developer",
+      "photoURL": "/photo.webp"
+    }
+  },
+  "experience": [
+    {
+      "mostRecent": true,
+      "dates": "Jun.2024 - Present",
+      "postTitle": "Intern-Engineer",
+      "postDescription": "Frontend developer",
+      "responsibilities": [
+        "Plan, estimate and develop tasks",
+        "Refactor and optimize code",
+        "Participate in code reviews within the team",
+        "Interact with other teams"
+      ]
+    },
+    {
+      "mostRecent": false,
+      "dates": "2009 - 2024",
+      "postTitle": "Civil Engineer",
+      "postDescription": "Civil engineering quality control",
+      "responsibilities": [
+        "Control over the execution of construction and installation works, acceptance of completed construction projects",
+        "Control over the implementation of the capital construction plan",
+        "Control over the compliance of the volume of work, deadlines and quality of construction and materials used"
+      ]
+    },
+    {
+      "mostRecent": false,
+      "dates": "2006 - 2009",
+      "postTitle": "Hydraulic engineer",
+      "postDescription": "Workshop foreman",
+      "responsibilities": [
+        "Control over the execution of production works, acceptance of completed construction projects",
+        "Submission of work to the controllers of the control department"
+      ]
+    }
+  ],
+  "tools": {
+    "languages": [],
+    "libraries": [],
+    "other": []
+  },
+  "education": [
+    {
+      "favourite": true,
+      "dates": "2024 - Present",
+      "title": "Student",
+      "tags": [
+        "C-lang",
+        "check-lib",
+        "debugging",
+        "team-work"
+      ],
+      "organization": "School-21 educational project of Sber"
+    },
+    {
+      "favourite": false,
+      "dates": "2023 - 2024",
+      "title": "Frontend developer",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Redux",
+        "jest",
+        "redux-toolkit",
+        "react-testing-library",
+        "playwright"
+      ],
+      "organization": ""
+    },
+    {
+      "favourite": false,
+      "dates": "2009",
+      "title": "Civil engineer",
+      "tags": [
+        "construction",
+        "engineering",
+        "architecture",
+        "services"
+      ],
+      "organization": "Karaganda State University"
+    },
+    {
+      "favourite": false,
+      "dates": "2006",
+      "title": "Hydraulic machines and automatic engineer",
+      "tags": [
+        "automation",
+        "engineering",
+        "mechanics",
+        "machines"
+      ],
+      "organization": "Karaganda State University"
+    }
+  ],
+  "interests": [
+    {
+      "name": "webdev"
+    },
+    {
+      "name": "frameworks"
+    },
+    {
+      "name": "communication"
+    },
+    {
+      "name": "time-management"
+    },
+    {
+      "name": "problem-solving"
+    },
+    {
+      "name": "teamwork"
+    },
+    {
+      "name": "leadership"
+    },
+    {
+      "name": "technical writing"
+    },
+    {
+      "name": "design"
+    },
+    {
+      "name": "photography"
+    },
+    {
+      "name": "artificial intelligence"
+    },
+    {
+      "name": "illustration"
+    },
+    {
+      "name": "typography"
+    },
+    {
+      "name": "social networks"
+    },
+    {
+      "name": "research"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Russian",
+      "mark": 10
+    },
+    {
+      "name": "English",
+      "mark": 8
+    },
+    {
+      "name": "Italian",
+      "mark": 2
+    }
+  ],
+  "contacts": {
+    "message": {
+      "text": "Let´s chat! I´m ready to work on exciting projects"
+    },
+    "mail": {
+      "text": "vladislav@nvtsk.ru"
+    }
+  }
+}
