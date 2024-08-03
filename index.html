@@ -7,7 +7,55 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <section class="profile row">
+        <img
+                class="profile__avatar"
+                src="/profileImg.png"
+                alt="profile image"
+        >
+        <div class="profile__id cv-block">
+          <span class="profile__hello">
+            Hello 👋🏻 I’m
+          </span>
+          <h2 class="profile__name">
+            Karthik SR
+          </h2>
+          <p class="profile__post">
+            UX/UI Designer
+          </p>
+        </div>
+        <div class="profile__languages cv-block">
+          <h2 class="cv-block__title">
+            Languages
+          </h2>
+          <div class="profile__languages--container languages">
+            <ul class="languages__name--list">
+              <li class="languages__name--item">
+                English
+              </li>
+              <li class="languages__name--item">
+                Malayalam
+              </li>
+              <li class="languages__name--item">
+                Hindi
+              </li>
+            </ul>
+            <ul class="languages__progress--list">
+              <li class="languages__progress--item" style="width: 88%">
+                <div class="progress-bar"></div>
+              </li>
+              <li class="languages__progress--item">
+                <div class="progress-bar"></div>
+              </li>
+              <li class="languages__progress--item">
+                <div class="progress-bar"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
