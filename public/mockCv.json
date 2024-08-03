@@ -1,0 +1,102 @@
+{
+  "name": "Karthik SR",
+  "post": "UX/UI Designer",
+  "languages": [
+    {
+      "name": "English",
+      "level": 100
+    },
+    {
+      "name": "Malayalam",
+      "level": 100
+    },
+    {
+      "name": "Hindi",
+      "level": 70
+    }
+  ],
+  "experience": [
+    {
+      "period": "Jun. 2023 - Present",
+      "post": "Marketing Manager",
+      "place": "Pankayam | Full-time",
+      "competitions": [
+        "Strategy development and planning of campaigns that promote the business and generate genuine traffic",
+        "SEO Content Creation for Blogs, Website, Social media"
+      ]
+    },
+    {
+      "period": "2017 - Present",
+      "post": "Graphic / Web designer",
+      "place": "Freelance",
+      "competitions": [
+        "Development of internal projects from scratch, product design of brands",
+        "Landing page, webapps and hybrid apps",
+        "Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary."
+      ]
+    },
+    {
+      "period": "Sep. 2021 - Jun. 2023",
+      "post": "Legal Assistant",
+      "place": "Law Firm | Intern",
+      "competitions": [
+        "Provide administrative support to lawyer and enhance office effectiveness",
+        "Handle communication with clients, witnesses etc.",
+        "repare case briefs and summarize depositions, interrogatories and testimony"
+      ],
+      "tools": [
+        {
+          "title": "design",
+          "tags": [
+            "figma", "photoshop", "illustrator", "premier", "notion", "meet"
+          ]
+        },
+        {
+          "title": "no-code",
+          "tags": [
+            "zapier", "webflow", "framer", "wordpress"
+          ]
+        },
+        {
+          "title": "artoficial intelligence",
+          "tags": [
+            "chatgpt", "copilot", "midjourney"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "2023",
+      "title": "UI/UX",
+      "tags": [
+        "#UX", "#UI", "#research", "#DesignSystem", "#UI", "#wireframing", "#figma", "#Ux"
+      ],
+      "place": "Coursera"
+    },
+    {
+      "period": "2017 - 2022",
+      "title": "Law",
+      "tags": [
+        "#law", "#legalStudies", "#contracts", "#internationalLaws"
+      ],
+      "place": "University of Kerala"
+    },
+    {
+      "period": "2017",
+      "title": "Graphic design",
+      "tags": [
+        "#branding", "#web", "#illustration", "#adobe"
+      ],
+      "place": "Coursrea"
+    }
+  ],
+  "interests": [
+    "branding", "design", "photography",
+    "artificial intelligence", "illustration",
+    "typography", "social networks", "research",
+    "dron pilot", "games"
+  ],
+  "email": "srkarthik.designscape@gmail.com"
+}
