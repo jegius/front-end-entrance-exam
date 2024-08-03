@@ -42,6 +42,9 @@ export const renderExperiences = (experiences) => {
 export const renderTools = (tools) => {
     const content = `
         <div class="tools">
+            <h2 class="cv-block__title">
+                Tools
+            </h2>
             <ul class="tools__categories">
                 ${tools.map((tool) => {
                     return `

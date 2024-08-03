@@ -16,8 +16,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -35,9 +42,8 @@ ul {
 }
 
 #root {
+    outline: 1px solid var(--gray-color);
     max-width: 595px;
-    max-height: 842px;
-    border: 1px solid black;
     padding: 15px 20px;
     display: flex;
     flex-direction: column;
