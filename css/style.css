@@ -7,6 +7,7 @@
     --light-gray-color: #F0F0F0;
     --light-color: #FFFFFF;
     --primary-color: #28D979;
+    --dark-primary-color: #149063;
 }
 
 * {
@@ -21,6 +22,16 @@ body {
 
 ul {
     list-style: none;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
 }
 
 #root {
@@ -199,6 +210,95 @@ ul {
             }
         }
     }
+}
+
+.other {
+    gap: 20px;
+
+    .container-column {
+        width: 50%;
+    }
+
+    .education {
+        width: 50%;
+
+        .education__list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+
+            .education__item {
+                background-color: var(--light-color);
+                border-radius: 10px;
+                padding: 8px;
+                width: 116px;
+            }
+        }
+
+        .education__date,
+        .education__title {
+            font-weight: 500;
+            font-size: 10px;
+            color: var(--dark-color);
+        }
+
+        .education__tags {
+            display: flex;
+            gap: 2px;
+            flex-wrap: wrap;
+
+            .education__tags--item {
+                font-size: 8px;
+                color: var(--dark-primary-color);
+            }
+        }
+
+        .education__place {
+            font-size: 8px;
+        }
+    }
+
+    .container-column {
+        gap: 20px;
+    }
+
+    .interests {
+        height: 100%;
+
+        .interests__list {
+            margin-top: 16px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+
+            .interests__item {
+                padding: 4px 10px;
+                background-color: var(--light-color);
+                font-size: 10px;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    .contact {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+
+        .contact__text {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .contact__email {
+            font-size: 10px;
+        }
+    }
+
 }
 
 
