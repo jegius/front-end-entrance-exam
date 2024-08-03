@@ -43,28 +43,28 @@
         "Provide administrative support to lawyer and enhance office effectiveness",
         "Handle communication with clients, witnesses etc.",
         "repare case briefs and summarize depositions, interrogatories and testimony"
-      ],
-      "tools": [
-        {
-          "title": "design",
-          "tags": [
-            "figma", "photoshop", "illustrator", "premier", "notion", "meet"
-          ]
-        },
-        {
-          "title": "no-code",
-          "tags": [
-            "zapier", "webflow", "framer", "wordpress"
-          ]
-        },
-        {
-          "title": "artoficial intelligence",
-          "tags": [
-            "chatgpt", "copilot", "midjourney"
-          ]
-        }
       ]
     }
+  ],
+  "tools": [
+      {
+        "title": "design",
+        "tags": [
+          "figma", "photoshop", "illustrator", "premier", "notion", "meet"
+        ]
+      },
+      {
+        "title": "no-code",
+        "tags": [
+          "zapier", "webflow", "framer", "wordpress"
+        ]
+      },
+      {
+        "title": "artoficial intelligence",
+        "tags": [
+          "chatgpt", "copilot", "midjourney"
+        ]
+      }
   ],
   "education": [
     {
