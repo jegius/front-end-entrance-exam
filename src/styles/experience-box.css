@@ -1,0 +1,111 @@
+.experience-box {
+  padding: 12px 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.list-job {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.list-job__item {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.job__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job__date {
+  display: flex;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.job__last-job {
+  padding: 2px 6px;
+  border-radius: 11px;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.job__last-job_color {
+  background-color: var(--grey-brown-color);
+  color: var(--light-yellow-color);
+}
+
+.job__content {
+  display: flex;
+}
+
+.job__info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 124px;
+  max-width: 170px;
+}
+
+.job__role {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.job__list-feature {
+  padding: 0 0 0 12px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+.job-feature__item {
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+}
+
+.about-job {
+  display: flex;
+  gap: 6px;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.about-job__info {
+  max-width: 65px;
+}
+
+.job-feature__text {
+  position: relative;
+  white-space: normal;
+  text-align: left;
+}
+
+.job-feature__mark {
+  align-self: flex-start;
+}

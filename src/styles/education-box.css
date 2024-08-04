@@ -1,0 +1,102 @@
+.education-box {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex: 1;
+  gap: 16px;
+  min-width: 0;
+  border-radius: 12px;
+}
+
+.education-box__content {
+  display: flex;
+  gap: 16px;
+}
+
+.education-box__column {
+  flex: 1;
+  min-width: 0;
+}
+
+.list-educations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-educations__item {
+  background-color: #ffffff;
+}
+
+.education {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 10px;
+}
+
+.education__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.education__years {
+  display: flex;
+}
+
+.education__title {
+  margin: 0;
+}
+
+.education__like {
+  visibility: hidden;
+}
+
+.last-education .education__like {
+  visibility: visible;
+}
+
+.education__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education__tags > * {
+  margin-right: 2px;
+}
+
+.education__tag {
+  display: flex;
+}
+
+.last-education,
+.last-education .tag__content {
+  color: #ffffff;
+  background-color: var(--green-color);
+}
+
+.tag__content {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+  color: var(--dark-green-color);
+}
+
+.tag__content::before {
+  content: '#';
+}
+
+.education__school {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.education__footer {
+  display: flex;
+}

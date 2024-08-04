@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.main__top,
+.main__bottom {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.main__bottom-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.main__top-left-column {
+  display: flex;
+  flex: 3;
+}
+
+.main__top-right-column {
+  display: flex;
+  max-width: 124px;
+  flex: 1;
+}

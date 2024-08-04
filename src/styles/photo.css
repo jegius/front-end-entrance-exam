@@ -1,0 +1,11 @@
+.photo {
+  display: flex;
+  flex: 1;
+}
+
+.photo__img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}

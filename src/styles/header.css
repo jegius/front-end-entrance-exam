@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.header__left-container {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.header__right-container {
+  display: flex;
+  flex: 1;
+}
