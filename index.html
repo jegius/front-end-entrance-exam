@@ -1,13 +1,940 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" type="image/png" href="./src/img/favicon-cv.png">
+    <title>Resume</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <header class="header main-container">
+      <h1 class="visual-hidden">CV</h1>
+      <div class="header__left-container">
+        <div class="photo">
+          <img
+            class="photo__img"
+            src="./src/img/profileImg-cv1.png"
+            alt="profile img"
+            loading="lazy"
+          >
+        </div>
+        <section class="name-box">
+          <div class="name-box__container background-base">
+            <h2
+              class="name-box__greeting-phrase title editable-text ripple-element"
+              contenteditable="true"
+              data-save-key="personTitle"
+            >
+              Hello 👋🏻 I’m
+            </h2>
+            <div class="your-info">
+              <span
+                class="your-info__name editable-text ripple-element"
+                contenteditable="true"
+                data-save-key="personName"
+              >
+                Karthik SR
+              </span>
+              <span
+                class="your-info__role editable-text ripple-element"
+                contenteditable="true"
+                data-save-key="personRole"
+              >
+                UX/UI Designer
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="header__right-container">
+        <section class="languages-box background-base">
+          <h2
+            class="languages-box__title title editable-text ripple-element"
+            contenteditable="true"
+            data-save-key="languagesTitle"
+          >
+            Languages
+          </h2>
+
+          <div class="languages-box__container">
+            <ul
+              class="list-name-languages ul-reset"
+              aria-label="Knowledge of languages"
+            >
+              <li class="list-name-languages__item">
+                <span
+                  class="list-name-languages__name editable-text ripple-element"
+                  contenteditable="true"
+                  data-save-key="languageItem"
+                >
+                  English
+                </span>
+              </li>
+              <li class="list-name-languages__item">
+                <span
+                  class="list-name-languages__name editable-text ripple-element"
+                  contenteditable="true"
+                  data-save-key="languageItem2"
+                >
+                  Malayalam
+                </span>
+              </li>
+              <li class="list-name-languages__item">
+                <span
+                  class="list-name-languages__name editable-text ripple-element"
+                  contenteditable="true"
+                  data-save-key="languageItem3"
+                >
+                  Hindi
+                </span>
+              </li>
+            </ul>
+            <ul class="list-level-languages ul-reset">
+              <li class="list-level-languages__item background-green"></li>
+              <li class="list-level-languages__item background-green"></li>
+              <li class="list-level-languages__item background-green"></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="main main-container">
+      <div class="main__top">
+        <div class="main__top-left-column">
+          <section class="experience-box background-base">
+            <h2
+              class="experience-box__title title editable-text ripple-element"
+              contenteditable="true"
+              data-save-key="experienceTitle"
+            >
+              Experience
+            </h2>
+            <ul class="list-job ul-reset">
+              <li class="list-job__item background-green color-white">
+                <section class="job">
+                  <header class="job__header">
+                    <h3 class="job__date">
+                      <span
+                        class="editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="jobTitle"
+                        >Jun. 2023 - Present</span
+                      >
+                    </h3>
+                    <div class="job__last-job job__last-job_color">
+                      <span
+                        class="editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="jobMostRecent"
+                        >most recent</span
+                      >
+                    </div>
+                  </header>
+                  <div class="job__content">
+                    <div class="job__info">
+                      <span
+                        class="job__role editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        aria-label="Role at work"
+                        data-save-key="jobRole"
+                        >Marketing Manager</span
+                      >
+                      <div class="about-job">
+                        <span
+                          class=".about-job__company-name editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Company name"
+                          data-save-key="jobCompanyName"
+                          >Pankayam</span
+                        >
+                        <span>|</span>
+                        <span
+                          class=".about-job__info editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Type employment"
+                          data-save-key="jobTypeEmployment"
+                          >Full-time</span
+                        >
+                      </div>
+                    </div>
+                    <ul
+                      class="job__list-feature job-feature"
+                      aria-label="Job features"
+                    >
+                      <li class="job-feature__item">
+                        <span class="job-feature__mark">•</span>
+                        <span
+                          class="job-feature__text editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="jobFeature"
+                          >Strategy development and planning of campaigns that
+                          promote the business and generate genuine traffic
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span class="job-feature__mark">•</span>
+                        <span
+                          class="job-feature__text editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="jobFeature2"
+                          >SEO Content Creation for Blogs, Website, Social media
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </li>
+              <li class="list-job__item background-white">
+                <section class="job">
+                  <h3 class="job__date">
+                    <span
+                      class="editable-text ripple-element"
+                      contenteditable="true"
+                      role="textbox"
+                      data-save-key="jobTitle2"
+                      >2017 - Present</span
+                    >
+                  </h3>
+                  <div class="job__content">
+                    <div class="job__info">
+                      <span
+                        class="job__role editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        aria-label="Role at work"
+                        data-save-key="jobRole2"
+                        >Graphic / Web designer</span
+                      >
+                      <div class="about-job">
+                        <span
+                          class=".about-job__company-name editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Company name"
+                          data-save-key="jobCompanyName2"
+                          >Freelance</span
+                        >
+                      </div>
+                    </div>
+                    <ul
+                      class="job__list-feature job-feature"
+                      aria-label="List of the job feature"
+                    >
+                      <li class="job-feature__item">
+                        <span class="job-feature__mark">•</span>
+                        <span
+                          class="job-feature__text editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job2Feature"
+                          >Development of internal projects from scratch,
+                          product design of brands
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span class="job-feature__mark">•</span>
+                        <span
+                          class="job-feature__text editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job2Feature2"
+                          >Landing page, webapps and hybrid apps
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span class="job-feature__mark">•</span>
+                        <span
+                          class="job-feature__text editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job2Feature3"
+                          >Coordinating with outside agencies, art services, web
+                          designer, marketing, printers, and colleagues as
+                          necessary.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </li>
+
+              <li class="list-job__item background-white">
+                <section class="job">
+                  <h3 class="job__date">
+                    <span
+                      class="editable-text ripple-element"
+                      contenteditable="true"
+                      role="textbox"
+                      data-save-key="jobTitle3"
+                      >JSep. 2021 - Jun. 2023</span
+                    >
+                  </h3>
+                  <div class="job__content">
+                    <div class="job__info">
+                      <span
+                        class="job__role editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        aria-label="Role at work"
+                        data-save-key="jobRole3"
+                        >Legal Assistant</span
+                      >
+                      <div class="about-job">
+                        <span
+                          class=".about-job__company-name editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Company name"
+                          data-save-key="jobCompanyName3"
+                          >Law Firm</span
+                        >
+                        <span>|</span>
+                        <span
+                          class=".about-job__info editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Type employment"
+                          data-save-key="jobTypeEmployment3"
+                          >Intern</span
+                        >
+                      </div>
+                    </div>
+                    <ul
+                      class="job__list-feature job-feature"
+                      aria-label="List of the job feature"
+                    >
+                      <li class="job-feature__item">
+                        <span class="job-feature__mark">•</span>
+                        <span
+                          class="job-feature__text editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job3Feature"
+                          >Provide administrative support to lawyer and enhance
+                          office effectiveness
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span class="job-feature__mark">•</span>
+                        <span
+                          class="job-feature__text editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job3Feature2"
+                          >Handle communication with clients, witnesses etc.
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span class="job-feature__mark">•</span>
+                        <span
+                          class="job-feature__text editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job3Feature3"
+                          >prepare case briefs and summarize depositions,
+                          interrogatories and testimony
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="main__top-right-column">
+          <section class="tool-box background-base">
+            <h2
+              class="tool-box__title title editable-text ripple-element"
+              contenteditable="true"
+              data-save-key="toolsTitle"
+            >
+              Tools
+            </h2>
+            <ul class="list-tool-categories ul-reset" aria-label="tool icons">
+              <li class="category-tools background-white">
+                <h3
+                  class="category-tools__header color-white background-black editable-text"
+                  contenteditable="true"
+                  data-save-key="toolsSubTitle"
+                >
+                  design
+                </h3>
+                <ul class="list-tools ul-reset">
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/figma.svg"
+                      alt="Figma"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/adobe-photoshop.svg"
+                      alt="Adobe photoshop"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/adobe-illustrator.svg"
+                      alt="Adobe illustrator"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/adobe-premiere.svg"
+                      alt="Adobe premiere"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/notion.svg"
+                      alt="Notion"
+                      class="tools__icon logo-notion"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/meet.svg"
+                      alt="Meet"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="category-tools background-white">
+                <h3
+                  class="category-tools__header color-white background-black editable-text"
+                  contenteditable="true"
+                  data-save-key="toolsSubTitle2"
+                >
+                  no-code
+                </h3>
+                <ul class="list-tools ul-reset">
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/logoZapìer.svg"
+                      alt="Zapìer"
+                      class="list-tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/logoWebflow.svg"
+                      alt="Webflow"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/logoFramer.svg"
+                      alt="Framer"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/logoWordpress.svg"
+                      alt="Wordpress"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="category-tools background-white">
+                <h3
+                  class="category-tools__header color-white background-black editable-text"
+                  contenteditable="true"
+                  data-save-key="toolsSubTitle3"
+                >
+                  artificial intelligence
+                </h3>
+                <ul class="list-tools ul-reset">
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/logoChatGPT.svg"
+                      alt="ChatGPT"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/logoCopilot.svg"
+                      alt="Copilot"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                  <li class="list-tools__item">
+                    <img
+                      src="./src/icons/logoMidjourney.svg"
+                      alt="Midjourney"
+                      class="tools__icon"
+                      loading="lazy"
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="main__bottom">
+        <div class="main__bottom-column">
+          <section class="education-box background-base">
+            <h2
+              class="education-box__title title editable-text ripple-element"
+              contenteditable="true"
+              data-save-key="educationTitle"
+            >
+              Education
+            </h2>
+            <div class="education-box__content">
+              <ul
+                class="education-box__column list-educations ul-reset"
+                aria-label="Educations"
+              >
+                <li class="list-educations__item education last-education">
+                  <header class="education__header">
+                    <h3 class="education__years" aria-label="Education years">
+                      <span
+                        class="editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="educationYears"
+                        >2023</span
+                      >
+                    </h3>
+                    <img
+                      class="education__like"
+                      src="./src/icons/like.svg"
+                      alt="like"
+                      loading="lazy"
+                    >
+                  </header>
+                  <section class="education__content">
+                    <h3 class="education__header">
+                      <span
+                        class="education__title editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="educationSubtitle"
+                        >UI/UX</span
+                      >
+                    </h3>
+                    <ul class="education__tags ul-reset">
+                      <li class="education__tag tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="educationTag"
+                          >UX</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="educationTag2"
+                          >UI</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="educationTag3"
+                          >research</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="educationTag4"
+                          >DesignSystem</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="educationTag5"
+                          >Ui</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="educationTag6"
+                          >wireframing</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="educationTag7"
+                          >figma</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="educationTag8"
+                          >Ux</span
+                        >
+                      </li>
+                    </ul>
+                  </section>
+                  <footer class="education__footer">
+                    <span
+                      class="education__school editable-text ripple-element"
+                      contenteditable="true"
+                      aria-label="School name"
+                      role="textbox"
+                      data-save-key="educationSchool"
+                    >
+                      Coursera
+                    </span>
+                  </footer>
+                </li>
+                <li class="list-educations__item education">
+                  <header class="education__header">
+                    <h3 class="education__years" aria-label="Education years">
+                      <span
+                        class="editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="education3Years"
+                        >2017</span
+                      >
+                    </h3>
+                    <img
+                      class="education__like"
+                      src="./src/icons/like.svg"
+                      alt="like"
+                      loading="lazy"
+                    >
+                  </header>
+                  <section class="education__content">
+                    <h3 class="education__header">
+                      <span
+                        class="education__title editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="education3Subtitle"
+                        >Graphic design</span
+                      >
+                    </h3>
+                    <ul class="education__tags ul-reset">
+                      <li class="education__tag tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          data-save-key="education3Tag"
+                          >branding</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          data-save-key="education3Tag2"
+                          >web</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          data-save-key="education3Tag3"
+                          >illustration</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          data-save-key="education3Tag4"
+                          >adobe</span
+                        >
+                      </li>
+                    </ul>
+                  </section>
+                  <footer class="education__footer">
+                    <span
+                      class="education__school editable-text ripple-element"
+                      contenteditable="true"
+                      aria-label="School name"
+                      role="textbox"
+                      data-save-key="education3School"
+                    >
+                      Coursera
+                    </span>
+                  </footer>
+                </li>
+              </ul>
+              <ul class="education-box__column list-educations ul-reset">
+                <li class="list-educations__item education">
+                  <header class="education__header">
+                    <h3 class="education__years" aria-label="Education years">
+                      <span
+                        class="editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="education2Years"
+                        >2017 - 2022</span
+                      >
+                    </h3>
+                    <img
+                      class="education__like"
+                      src="./src/icons/like.svg"
+                      alt="like"
+                      loading="lazy"
+                    >
+                  </header>
+                  <section class="education__content">
+                    <h3 class="education__header">
+                      <span
+                        class="education__title editable-text ripple-element"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="education2Subtitle"
+                        >Law</span
+                      >
+                    </h3>
+                    <ul
+                      class="education__tags ul-reset"
+                      aria-label="Education tags"
+                    >
+                      <li class="education__tag tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="education2Tag"
+                          >law</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="education2Tag2"
+                          >legalStudies</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="education2Tag3"
+                          >contracts</span
+                        >
+                      </li>
+                      <li class="education__tag">
+                        <span
+                          class="tag__content editable-text ripple-element"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="education2Tag4"
+                          >internationalLaws</span
+                        >
+                      </li>
+                    </ul>
+                  </section>
+                  <footer class="education__footer">
+                    <span
+                      class="education__school editable-text ripple-element"
+                      contenteditable="true"
+                      aria-label="School name"
+                      role="textbox"
+                      data-save-key="education2School"
+                    >
+                      University of Kerala
+                    </span>
+                  </footer>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="main__bottom-column">
+          <section class="interests-box background-base">
+            <h2
+              class="interests-box__title title editable-text ripple-element"
+              contenteditable="true"
+              data-save-key="interestsTitle"
+            >
+              Interests
+            </h2>
+            <ul
+              class="interests-box__list-interests ul-reset"
+              aria-label="Interests"
+            >
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag"
+                  >branding</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag2"
+                  >design</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag3"
+                  >photography</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag4"
+                  >artificial intelligence</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag5"
+                  >illustration</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag6"
+                  >typography</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag7"
+                  >social networks</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag8"
+                  >research</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag9"
+                  >dron pilot</span
+                >
+              </li>
+              <li class="interests-box__interest ripple-element">
+                <span
+                  class="editable-text"
+                  contenteditable="true"
+                  role="textbox"
+                  data-save-key="interestsTag10"
+                  >games</span
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="contact-box background-black color-white">
+            <h2
+              contenteditable="true"
+              class="contact-box__title title editable-text ripple-element"
+              data-save-key="contactInfoTitle"
+            >
+              Let´s chat! I´m ready to work on existing projects
+            </h2>
+            <address class="contact-box__address">
+              <label class="contact-box__label visual-hidden" for="email"
+                >Email:</label
+              >
+              <input
+                class="contact-box__email contact-box__email_color-grey background-black"
+                type="email"
+                name="email"
+                id="email"
+                value="example@example.com"
+                data-save-key="contactInfoEmail"
+              >
+            </address>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer main-container">
+      <div class="footer-container background-base">
+        <button class="save-btn button ripple-element">Save</button>
+      </div>
+    </footer>
+
+    <script src="./src/index.js" type="module"></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"
+    ></script>
   </body>
 </html>

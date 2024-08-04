@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+}
+
+.footer-container {
+  padding: 12px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 12px;
+  width: 100%;
+}

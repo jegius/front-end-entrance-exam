@@ -1,0 +1,48 @@
+.languages-box {
+  padding: 12px 12px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.languages-box__container {
+  display: flex;
+  gap: 17px;
+}
+
+.list-name-languages,
+.list-level-languages {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-name-languages {
+  gap: 10px;
+}
+
+.list-level-languages {
+  justify-content: space-between;
+  flex-grow: 2;
+}
+
+.list-name-languages__item {
+  display: flex;
+}
+
+.list-name-languages__name {
+  max-width: 58px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.list-level-languages__item {
+  height: 11px;
+  border-radius: 3px;
+}
+
+.list-level-languages__item:last-child {
+  width: 77%;
+}

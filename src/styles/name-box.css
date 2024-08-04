@@ -1,0 +1,38 @@
+.name-box {
+  display: flex;
+  flex: 1;
+}
+
+.name-box__container {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  border-radius: 12px;
+}
+
+.name-box__greeting-phrase {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.your-info {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.your-info__name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+.your-info__role {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #5c5c5c;
+}

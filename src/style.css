@@ -1,0 +1,263 @@
+@import './styles/normalize.css';
+@import './styles/variables.css';
+@import './styles/common-classes.css';
+@import './styles/editable-text.css';
+@import './styles/photo.css';
+@import './styles/header.css';
+@import './styles/name-box.css';
+@import './styles/languages-box.css';
+@import './styles/experience-box.css';
+@import './styles/tool-box.css';
+@import './styles/education-box.css';
+@import './styles/interests-box.css';
+@import './styles/contact-box.css';
+@import './styles/main-section.css';
+@import './styles/footer.css';
+@import './styles/buttons.css';
+@import './styles/ripple-animation.css';
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+input {
+  padding: 0;
+  border: 0;
+}
+
+@media screen and (min-width: 620px) {
+  .editable-text,
+  .contact-box__email {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .job__date,
+  .your-info__name {
+    font-size: 16px;
+  }
+
+  .job__role,
+  .about-job,
+  .education__header,
+  .education__title,
+  .education__school,
+  .your-info__role {
+    font-size: 14px;
+  }
+
+  .category-tools__header {
+    font-size: 5px;
+  }
+
+  .education__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list-name-languages {
+    min-width: 70px;
+  }
+
+  .list-name-languages__name {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .main__top-right-column {
+    max-width: 50%;
+  }
+
+  .list-tools {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .category-tools__header {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .photo {
+    max-height: 300px;
+  }
+
+  .main__top {
+    flex-direction: column;
+  }
+
+  .tool-box {
+    padding: 12px;
+    width: 100%;
+  }
+
+  .list-tool-categories {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main__top-right-column {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .list-tools {
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .education-box__content {
+    flex-direction: column;
+  }
+
+  .editable-text,
+  .contact-box__email {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .job__date,
+  .your-info__name {
+    font-size: 14px;
+  }
+
+  .job__role,
+  .about-job,
+  .education__header,
+  .education__title,
+  .education__school,
+  .your-info__role {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main__bottom {
+    flex-direction: column;
+  }
+
+  .list-tool-categories {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .category-tools {
+    margin: 0;
+  }
+
+  .job__info {
+    width: 95px;
+  }
+
+  .list-tools {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .list-tools {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .job__content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .job__list-feature {
+    padding-left: 0;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .list-tools {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .category-tools {
+    width: 100%;
+  }
+
+  .header__left-container {
+    flex-direction: column;
+  }
+
+  .name-box__container {
+    gap: 20px;
+  }
+
+  .button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .list-tools {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .button {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+
+@media print {
+  .footer {
+    visibility: hidden;
+  }
+}
