@@ -1,4 +1,4 @@
-import {createCvBlock} from "./utils.js";
+import {createCvBlock, getToolIconSrc} from "./utils.js";
 
 export const renderExperiences = (experiences) => {
     const content = `
@@ -53,9 +53,9 @@ export const renderTools = (tools) => {
                               design
                             </h3>
                             <ul class="tools__category--list">
-                                ${tool.tags.map((tag) => {
+                                ${getToolIconSrc(tool.tags).map((src) => {
                                     return `<li class="tools__category--item">
-                                        <div class="tool"></div>
+                                        <img src="${src}" alt="${tool}">
                                     </li>`;
                                 }).join('')}
                               
