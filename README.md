@@ -8,6 +8,8 @@
 
 3. Установить все зависимости командой `npm install`
 
+### Deployment: https://terebinovsergey.github.io/front-end-entrance-exam/
+
 ### Доступные скрипты
 
 :white_check_mark: "dev": "vite"
