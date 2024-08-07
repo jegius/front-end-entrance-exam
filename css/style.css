@@ -94,3 +94,172 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+/*  */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  text-align: center;
+  padding: 20px;
+}
+
+.right-column {
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+/* Секции */
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Опыт работы */
+.experience-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Навыки */
+.skills{
+  grid-column: span 2;
+}
+
+/* Инструменты */
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  grid-row: span 2;
+}
+
+.tool {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.tool > img{
+  width: 18px;
+  height: 18px;;
+}
+
+/* Образование */
+.education-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Кнопка */
+.download-button {
+  display: block;
+  position: sticky;
+  bottom: 10px;
+  left: calc(100vw - 10px);
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Анимации */
+.animated {
+  transition: all 0.3s ease;
+}
+
+.animated:hover {
+  transform: scale(1.05);
+}
+
+/* Material Wave */
+.material-wave {
+  position: relative;
+  overflow: hidden;
+}
+
+.material-wave::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.material-wave:hover::before {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: 1fr;
+  }
+
+  .profile-pic {
+      width: 100px;
+      height: 100px;
+  }
+}
