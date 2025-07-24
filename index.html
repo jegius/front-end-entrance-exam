@@ -2,12 +2,238 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="author" content="Daniil Dashkevich" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:locale" content="en_EN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="T-Bank: CV" />
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/general.css" />
+    <link rel="stylesheet" type="text/css" href="./css/experience.css" />
+    <link rel="stylesheet" type="text/css" href="./css/education.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>T-Bank: CV</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <main id="app">
+      <section id="general-information">
+        <div class="div--square bc-light-gray-1 avatar-block"></div>
+        <div class="div--square bc-light-gray-1">
+          <h3 class="h3__hello">Hello 👋🏻 I’m</h3>
+          <h1>Dashkevich D.</h1>
+          <h2>Front end developer</h2>
+        </div>
+        <div class="div--rectangle bc-light-gray-1">
+          <h2 class="heading">Languages</h2>
+          <ul class="language-list">
+            <li class="language-item">
+              <h3>Russian</h3>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </li>
+            <li class="language-item">
+              <h3>Belorussian</h3>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </li>
+
+            <li class="language-item">
+              <h3>English</h3>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="experience-and-tools">
+        <div class="div--rectangle bc-light-gray-1">
+          <h2 class="heading">Experience</h2>
+          <div class="experience-container">
+            <div class="experience-block bc-green-bright">
+              <p class="color-white mt-2">Oct. 2024 – July 2025 (10 months)</p>
+              <div>
+                <div>
+                  <h3 class="color-white">Software Engineer</h3>
+                  <p class="color-green-pale">Modsen</p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <div class="experience-block bc-white">
+              <p class="">June – Aug. 2024 (3 months)</p>
+              <div>
+                <div>
+                  <div>
+                    <h3>Software Engineer</h3>
+                    <p>Kwork</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div--rectangle--reverse bc-light-gray-1">
+          <h2 class="heading">Tools</h2>
+          <div class="tools-container">
+            <div class="tools-section">
+              <div class="tools-label">
+                <span class="color-white">front</span>
+              </div>
+              <img
+                src="./public/javascript.svg"
+                alt="JavaScript Icon"
+                title="JavaScript"
+                width="20"
+                height="20"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                alt="TypeScript Icon"
+                title="TypeScript"
+                width="20"
+                height="20"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React Icon"
+                title="React"
+                width="20"
+                height="20"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/30/Redux_Logo.png"
+                alt="Redux Icon"
+                title="Redux"
+                width="38"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Next.js_wordmark.svg"
+                alt="Next.js Icon"
+                title="Next.js"
+                width="38"
+              />
+            </div>
+            <div class="tools-section">
+              <div class="tools-label">
+                <span class="color-white">other</span>
+              </div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                alt="PostgreSQL Icon"
+                title="PostgreSQL"
+                width="20"
+                height="20"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg"
+                alt="Git Icon"
+                title="Git"
+                width="20"
+                height="20"
+              />
+              <img
+                src="./public/docker.svg"
+                alt="Docker Icon"
+                title="Docker"
+                width="20"
+                height="20"
+              />
+              <img
+                src="./public/jest.svg"
+                alt="Jest Icon"
+                title="Jest"
+                width="20"
+                height="20"
+              />
+              <img
+                src="./public/cypress.svg"
+                alt="Cypress Icon"
+                title="Cypress"
+                width="20"
+                height="20"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education-and-interests">
+        <article class="div--rectangle bc-light-gray-1 section-article">
+          <h2 class="heading">Education</h2>
+          <div class="education-container">
+            <div class="education-block bc-green-bright">
+              <h3 class="color-white mt-2">2021-2025</h3>
+              <div>
+                <h3 class="color-white">Technician-programmer</h3>
+                <p class="color-green-pale">#OOP #SOLID #Testing #UX/UI</p>
+                <p class="color-green-pale">
+                  Belarusian State University of Informatics and
+                  Radioelectronics
+                </p>
+              </div>
+            </div>
+            <div class="education-block bc-white">
+              <h3>2024</h3>
+              <div>
+                <h3>
+                  React – The Complete Guide 2024 (incl. React Router and Redux)
+                </h3>
+                <p class="color-green-dark">#React #Redux</p>
+              </div>
+              <p>Udemy</p>
+            </div>
+            <div class="education-block bc-white">
+              <h3>2024</h3>
+              <div>
+                <h3>UX/UI</h3>
+                <p class="color-green-dark">
+                  #Figma #AdobePhotoshop #AdobeIllustrator
+                </p>
+              </div>
+              <p>Great Learning</p>
+            </div>
+          </div>
+        </article>
+        <aside class="section-aside">
+          <div class="aside-block bc-light-gray-1">
+            <h2 class="heading">Interests</h2>
+            <div class="labels-frame">
+              <p class="label">UX/UI</p>
+              <p class="label">Front end</p>
+              <p class="label">E-commerce</p>
+              <p class="label">Business systems</p>
+              <p class="label">Unit Testing</p>
+              <p class="label">E2E Testing</p>
+              <p class="label">Component Testing</p>
+              <p class="label">Data Science</p>
+              <p class="label">AI/ML</p>
+            </div>
+          </div>
+          <div class="aside-block bc-black" style="min-height: fit-content">
+            <h2 class="heading color-white">
+              Let´s chat! I´m ready to work on exciting projects
+            </h2>
+            <a href="mailto:danidashkevichit@gmail.com" title="Email">
+              <h3 class="color-gray-light">danidashkevichit@gmail.com</h3>
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
   </body>
 </html>
