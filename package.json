@@ -1,14 +1,23 @@
 {
-  "name": "front-end-entrance-exam",
+  "name": "tbank-entrance-exam",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:eslint": "eslint . --ext .js",
+    "lint:jshint": "jshint . --exclude node_modules",
+    "lint": "npm run lint:eslint && npm run lint:jshint",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jshint": "^2.13.6",
+    "prettier": "^3.0.0"
   }
 }

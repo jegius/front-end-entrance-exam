@@ -1,0 +1,13 @@
+{
+  "esversion": 6,
+  "node": true,
+  "browser": true,
+  "undef": true,
+  "unused": true,
+  "eqeqeq": true,
+  "curly": true,
+  "latedef": true,
+  "quotmark": "single",
+  "camelcase": true,
+  "strict": true
+}
