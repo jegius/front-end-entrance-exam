@@ -1,5 +1,5 @@
 {
-  "esversion": 6,
+  "esversion": 10,
   "node": true,
   "browser": true,
   "undef": true,
