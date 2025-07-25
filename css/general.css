@@ -1,0 +1,129 @@
+:root {
+  --side-size: 124px;
+}
+
+#general-information {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-20);
+}
+
+.avatar-block {
+  position: relative;
+  width: var(--side-size);
+  height: var(--side-size);
+  transition: background-color 0.35s ease-in-out;
+}
+
+div.avatar-block:hover {
+  background-color: var(--color-dark-gray-2);
+}
+
+.avatar-block::after {
+  content: 'DD';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  line-height: 150%;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-dark-gray-1);
+  transition: color 0.35s ease-in-out;
+}
+
+.avatar-block:hover::after {
+  color: var(--color-white);
+}
+
+.div--square,
+.div--rectangle,
+.div--rectangle--reverse {
+  transition: background-color 0.35s ease-in-out;
+}
+
+.div--square:hover,
+.div--rectangle:hover,
+.div--rectangle--reverse:hover {
+  background-color: var(--color-gray-light);
+}
+
+.div--square {
+  width: auto;
+  height: auto;
+  min-width: var(--side-size);
+  min-height: var(--side-size);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-12);
+  border-radius: var(--radius-12);
+}
+
+.div--rectangle {
+  width: 100%;
+  height: auto;
+  min-height: var(--side-size);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-12);
+  border-radius: var(--radius-12);
+}
+
+.div--rectangle--reverse {
+  width: var(--side-size);
+  height: 100%;
+  min-width: var(--side-size);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-12);
+  border-radius: var(--radius-12);
+}
+
+.h3__hello {
+  margin-bottom: auto;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-10);
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-16);
+}
+
+.language-item > h3 {
+  width: 60px;
+  max-width: 60px;
+}
+
+.progress-bar {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.progress-fill {
+  height: 12px;
+  background-color: var(--color-green-bright);
+  border-radius: var(--radius-3);
+}
+
+@media (max-width: 768px) {
+  #general-information {
+    flex-wrap: wrap;
+  }
+
+  .div--square:nth-child(2) {
+    width: calc(100% - var(--side-size) - 68px);
+  }
+}
