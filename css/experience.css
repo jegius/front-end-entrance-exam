@@ -42,6 +42,17 @@
   padding: var(--spacing-2) var(--spacing-6);
 }
 
+@media (max-width: 768px) {
+  .experience-block:first-child > p {
+    margin-top: var(--spacing-24);
+  }
+
+  .experience-block:first-child::after {
+    right: revert;
+    left: 8px;
+  }
+}
+
 .tools-container {
   width: auto;
   height: auto;
@@ -77,4 +88,30 @@
   background-color: var(--color-black);
   border-radius: var(--radius-60);
   padding: var(--spacing-2) var(--spacing-6);
+}
+
+.wrapper {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: var(--gap-8);
+}
+
+.wrapper > div:first-child {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 100px;
+}
+
+.wrapper > div:last-child {
+  width: calc(100% - 108px);
+}
+
+@media (max-width: 768px) {
+  .wrapper > div:last-child {
+    width: 100%;
+  }
 }

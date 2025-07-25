@@ -1,0 +1,43 @@
+:root {
+  --color-highlight: #ffff99;
+  --color-highlight-background: #00000026;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: var(--color-highlight);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.highlighted {
+  animation: highlight 1s ease-in-out forwards;
+}
+
+.wave-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: var(--radius-3);
+}
+
+.material-wave {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-highlight-background);
+  transform: scale(0);
+  animation: wave-animation 0.35s linear;
+  pointer-events: none;
+}
+
+@keyframes wave-animation {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}

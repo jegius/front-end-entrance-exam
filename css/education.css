@@ -33,11 +33,10 @@
 
 .section-article,
 .section-aside {
-  width: fit-content;
+  width: 50%;
 }
 
 .section-aside {
-  width: 50%;
   display: flex;
   flex-direction: column;
   gap: var(--gap-20);
@@ -51,6 +50,15 @@
   flex-direction: column;
   padding: var(--spacing-12);
   border-radius: var(--radius-12);
+  transition: background-color 0.35s ease-in-out;
+}
+
+.aside-block:hover {
+  background-color: var(--color-gray-light);
+}
+
+.aside-block.bc-black:hover {
+  background-color: var(--color-black);
 }
 
 .labels-frame {
@@ -64,7 +72,7 @@
   gap: var(--gap-8);
 }
 
-.label {
+p.label {
   width: fit-content;
   font-size: 10px;
   line-height: 150%;
@@ -74,4 +82,30 @@
   background-color: var(--color-white);
   border-radius: var(--radius-60);
   padding: var(--spacing-4) var(--spacing-10);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.secondary-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  padding: var(--spacing-8) var(--spacing-4);
+  border-radius: var(--radius-60);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  outline: none;
+  border: none;
+  transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  color: var(--color-white);
+  background-color: var(--color-green-bright);
 }
