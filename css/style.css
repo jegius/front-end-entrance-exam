@@ -1,96 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+    --green: #28d979;
+    font-family: Poppins, serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1, h2, h3, h4, h5, h6 {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-x: auto;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+p {
+    word-break: break-word;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.container1 {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.content {
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.active-content {
+    color: white;
+    background-color: var(--green);
+}
+
+.passive-content {
+    color: black;
+    background-color: white;
+}
+
+.black-content {
+    color: white;
+    background-color: black;
+}
+
+/*group1*/
+#photo {
+    grid-area: photo;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#introduction {
+    height: 100%;
+    grid-area: introduction;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    margin-top: auto;
+}
+
+#languages {
+    height: 100%;
+    grid-area: languages;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.no-wrap {
+    white-space: nowrap;
+    overflow: scroll;
+    text-overflow: ellipsis;;
+}
+
+.percent {
+    white-space: nowrap;
+    overflow: scroll;
+    text-overflow: ellipsis;;
+}
+
+/*group2*/
+#experience {
+    grid-area: experience;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.experienceContent {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "duration addInfo"
+    "jobTitle jobTitleDescription";
+    gap: 15px;
+}
+
+.duration {
+    grid-area: duration;
+}
+
+.jobTitle {
+    grid-area: jobTitle;
+}
+
+.jobTitleDescription {
+    grid-area: jobTitleDescription;
+}
+
+#tools {
+    grid-area: tools;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#toolsGroups {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.iconGroup {
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, auto);
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    position: relative;
+}
+
+.titleIconGroup {
+    padding: 2px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 59px;
+
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142%;
+    white-space: nowrap;
+}
+
+
+.icon {
+    height: 60px;
+    margin: auto;
+}
+
+/*group3*/
+#education {
+    grid-area: education;
+}
+
+#educationGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+#interests {
+    grid-area: interests;
+}
+
+#appeal {
+    grid-area: appeal;
+}
+
+/*phone*/
+@media (max-width: 500px) {
+    #educationGroup {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*pad*/
+@media (min-width: 500px) and (max-width: 1060px) {
+    #group1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "photo introduction"
+        "languages languages";
+    }
+
+    #toolsGroups {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1060px) {
+    #group1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-areas: "photo introduction languages";
+    }
+
+    #group2 {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "experience tools"
+    }
+
+    #group3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "education interests"
+        "education appeal";
+    }
+
+    #group4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media print {
+    body * {
+        visibility: visible;
+    }
+
+    #group4 {
+        display: none;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    #toolsGroups {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #educationGroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button, nav, footer {
+        display: none !important;
+    }
 }

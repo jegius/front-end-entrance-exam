@@ -1,13 +1,168 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+    />
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+</head>
+<body class="print-container">
+<div id="group4" class="group">
+    <button id="edit" class="black-content">Редактировать</button>
+    <button id="save" class="active-content">Сохранить в PDF</button>
+    <button id="clear">Стереть</button>
+</div>
+<div id="group1" class="group">
+    <img id="photo" src="public/myphoto.jpg" alt="My photo"/>
+    <div id="introduction" class="container1 content">
+        <p id="greetings">Hello 👋🏻 I’m</p>
+        <b id="name">Karthik SR</b>
+        <p id="jobTitle">UX/UI Designer</p>
+    </div>
+    <div id="languages" class="container1 content">
+        <h2>Languages</h2>
+        <div style="display: grid; grid-template-columns: 1fr 5% 2% 3fr; gap: 10px; margin-top: auto">
+            <p class="language no-wrap">Russian</p>
+            <p class="percent no-wrap">100</p>
+            <p>%</p>
+            <div class="active-content" style="width: 100%; border-radius: 15px"></div>
+            <p class="language no-wrap">English</p>
+            <p class="percent no-wrap">80</p>
+            <p>%</p>
+            <div class="active-content" style="width: 80%; border-radius: 15px"></div>
+            <p class="language no-wrap">German</p>
+            <p class="percent no-wrap">5</p>
+            <p>%</p>
+            <div class="active-content" style="width: 5%; border-radius: 15px"></div>
+            <p class="language no-wrap">French</p>
+            <p class="percent no-wrap">5</p>
+            <p>%</p>
+            <div class="active-content" style="width: 5%; border-radius: 15px"></div>
+        </div>
+    </div>
+</div>
+<div id="group2" class="group">
+    <div id="experience" class="container1 content">
+        <h2>Experience</h2>
+        <div id="firstExperience" class="active-content content experienceContent">
+            <p id="durationFirst" class="duration">Jun, 2023 - Present</p>
+            <div class="jobTitle">
+                <b id="jobTitleFirst">Marketing Manager</b>
+                <p id="companyFirst">Pankayam | Full-time</p>
+            </div>
+            <ul id="jobTitleDescriptionFirst" class="jobTitleDescription">
+                <li>Strategy development and planning of campaigns that promote the business and generate genuine
+                    traffic
+                </li>
+                <li>SEO Content Creation for Blogs, Website, Social media</li>
+            </ul>
+        </div>
+        <div id="secondExperience" class="passive-content content experienceContent">
+            <p id="durationSecond" class="duration">2017 - Present</p>
+            <div class="jobTitle">
+                <b id="jobTitleSecond">Graphic / Web designer</b>
+                <p id="companySecond">Freelance</p>
+            </div>
+            <ul id="jobTitleDescriptionSecond" class="jobTitleDescription">
+                <li>Development of internal projects from scratch, product design of brands</li>
+                <li>Landing page, webapps and hybrid apps</li>
+                <li>Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues
+                    as necessary.
+                </li>
+            </ul>
+        </div>
+        <div id="thirdExperience" class="passive-content content experienceContent">
+            <p id="durationThird" class="duration">Sep. 2021 - Jun. 2023</p>
+            <div class="jobTitle">
+                <b id="jobTitleThird">Legal Assistant</b>
+                <p id="companyThird">Law Firm | Intern</p>
+            </div>
+            <ul id="jobTitleDescriptionThird" class="jobTitleDescription">
+                <li>Provide administrative support to lawyer and enhance office effectiveness</li>
+                <li>Handle communication with clients, witnesses etc.</li>
+                <li>repare case briefs and summarize depositions, interrogatories and testimony</li>
+            </ul>
+        </div>
+    </div>
+    <div id="tools" class="container1 content">
+        <h2>Tools</h2>
+        <div id="toolsGroups">
+            <div id="design" class="content passive-content iconGroup">
+                <h2 class="titleIconGroup black-content">design</h2>
+                <img src="public/icons/logoFigma.svg" class="icon"/>
+                <img src="public/icons/🦆%20icon%20_adobe%20photoshop_.svg" class="icon"/>
+                <img src="public/icons/🦆%20icon%20_adobe%20illustrator_.svg" class="icon"/>
+                <img src="public/icons/🦆%20icon%20_adobe%20premiere_.svg" class="icon"/>
+                <img src="public/icons/logoNotion.svg" class="icon"/>
+                <img src="public/icons/logoMeet.svg" class="icon"/>
+            </div>
+            <div id="no-code" class="content passive-content iconGroup">
+                <h2 class="titleIconGroup black-content">no-code</h2>
+                <img src="public/icons/logoZapìer%201.svg" class="icon"/>
+                <img src="public/icons/logoWebflow.svg" class="icon"/>
+                <img src="public/icons/logoFramer.svg" class="icon"/>
+                <img src="public/icons/logoWordpress.svg" class="icon"/>
+            </div>
+            <div id="artificial intelligence" class="content passive-content iconGroup">
+                <h2 class="titleIconGroup black-content">artificial intelligence</h2>
+                <img src="public/icons/logoChatGPT%201.svg" class="icon"/>
+                <img src="public/icons/logoCopilot%201.svg" class="icon"/>
+                <img src="public/icons/logoMidjourney%201.svg" class="icon"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="group3" class="group">
+    <div id="education" class="container1 content">
+        <h2>Education</h2>
+        <div id="educationGroup">
+            <div class="active-content content">
+                <h3>2023</h3>
+                <h3>UI/UX</h3>
+                <p>#UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux</p>
+                <p>Coursera</p>
+            </div>
+            <div class="passive-content content">
+                <h3>2017 -2022</h3>
+                <h3>Law</h3>
+                <p style="color: var(--green)">#law #UI #legalStudies #contracts #internationalLaws</p>
+                <p>University of Kerala</p>
+            </div>
+            <div class="passive-content content">
+                <h3>2017</h3>
+                <h3>Graphic design</h3>
+                <p style="color: var(--green)">#branding #web #illustration #adobe</p>
+                <p>Coursera</p>
+            </div>
+        </div>
+    </div>
+    <div id="interests" class="container1 content" style="flex-grow: 1">
+        <h2>Interests</h2>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap">
+            <p class="passive-content" style="border-radius: 5px">photography</p>
+            <p class="passive-content" style="border-radius: 5px">artificial intelligence</p>
+            <p class="passive-content" style="border-radius: 5px">branding</p>
+            <p class="passive-content" style="border-radius: 5px">illustration</p>
+            <p class="passive-content" style="border-radius: 5px">design</p>
+            <p class="passive-content" style="border-radius: 5px">typography</p>
+            <p class="passive-content" style="border-radius: 5px">social networks</p>
+            <p class="passive-content" style="border-radius: 5px">research</p>
+            <p class="passive-content" style="border-radius: 5px">dron pilot</p>
+            <p class="passive-content" style="border-radius: 5px">games</p>
+        </div>
+    </div>
+    <div id="appeal" class="content black-content" style="flex-grow: 1">
+        <p>Let´s chat! I´m ready to work on excinting projects</p>
+        <p>tegor247@gmail.com</p>
+    </div>
+</div>
+<script src="./src/main.js"></script>
+</body>
 </html>
