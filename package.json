@@ -6,9 +6,31 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "vite": "^5.2.0"
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.0.6"
+  },
+  "description": "Вашей задачей является создание веб-страницы с резюме, которое должно быть сверстано по данному шаблону. Страница должна иметь возможность изменять текст элементов и предоставлять кнопку \"Скачать\" для скачивания резюме в формате PDF. В качестве дополнительного задания, необходимо анимировать клики на элементы резюме с помощью CSS-анимаций и добавить эффект \"Material Wave\".",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jegius/front-end-entrance-exam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jegius/front-end-entrance-exam/issues"
+  },
+  "homepage": "https://github.com/jegius/front-end-entrance-exam#readme",
+  "dependencies": {
+    "html2pdf.js": "^0.10.3"
   }
 }
