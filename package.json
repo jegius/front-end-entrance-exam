@@ -6,9 +6,27 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "devDependencies": {
-    "vite": "^5.2.0"
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "vite": "^5.3.1",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "html2pdf.js": "^0.10.3"
   }
 }
