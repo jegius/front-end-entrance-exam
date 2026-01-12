@@ -1,12 +1,33 @@
 {
   "name": "front-end-entrance-exam",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "Вашей задачей является создание веб-страницы с резюме, которое должно быть сверстано по данному шаблону. Страница должна иметь возможность изменять текст элементов и предоставлять кнопку \"Скачать\" для скачивания резюме в формате PDF. В качестве дополнительного задания, необходимо анимировать клики на элементы резюме с помощью CSS-анимаций и добавить эффект \"Material Wave\".",
+  "homepage": "https://github.com/eugeneZolotarev/front-end-entrance-exam#readme",
+  "bugs": {
+    "url": "https://github.com/eugeneZolotarev/front-end-entrance-exam/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugeneZolotarev/front-end-entrance-exam.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "esbuild": "^0.20.2",
+    "html2pdf.js": "^0.10.3",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.0.1",
+    "postcss": "^8.4.38",
+    "rollup": "^4.18.0",
+    "source-map-js": "^1.2.0"
   },
   "devDependencies": {
     "vite": "^5.2.0"

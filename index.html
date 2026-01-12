@@ -1,13 +1,316 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Резюме</title>
   </head>
   <body>
-    <div id="app"></div>
+      <div class="page-container">
+        <main class="bentoFlexbox">
+
+          <img class="profilePhoto" src="./images/photo.svg" alt="photo">
+
+          <section class="nameBox">
+              <h2 class="greetingPhrase" contenteditable="true">Hello 👋🏻 I'm</h2>
+              <div class="yourInfo">
+                <div class="name" contenteditable="true">Graham Hunt</div>
+                <div class="role" contenteditable="true">Brand/Logo Designer</div>
+              </div>
+          </section>
+
+          <section class="languagesBox">
+            <h2 class="title" contenteditable="true">Languages</h2>
+            <div class="listLanguages">
+              <div class="nameLanguages">
+                <p class="English" contenteditable="true">English</p>
+                <p class="Spanish" contenteditable="true">Spanish</p>
+                <p class="French" contenteditable="true">French</p>
+              </div>
+              <div class="levelLanguages">
+                <input
+                  class="level slider"
+                  type="range"
+                  value="50"
+                  min="0"
+                  max="100"
+                  oninput="this.style.setProperty('--value', this.value + '%')"
+                >
+                <input
+                  class="level slider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  oninput="this.style.setProperty('--value', this.value + '%')"
+                >
+                <input
+                  class="level slider"
+                  type="range"
+                  value="50"
+                  min="0"
+                  max="100"
+                  oninput="this.style.setProperty('--value', this.value + '%')"
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="educationBox">
+            <h2 class="title" contenteditable="true" contenteditable="true">Education</h2>
+            <div class="content-education">
+              <div class="column">
+                <div class="education-info">
+                      <div class="topBar">
+                        <p class="year-education" contenteditable="true" contenteditable="true">2024</p>
+                        <button class="heart-btn">
+                          <svg class="heart-icon" viewBox="0 0 24 24">
+                          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <p class="nameTitle" contenteditable="true" contenteditable="true">UX/UI</p>
+                        <p class="tags" contenteditable="true">
+                          #UX #UI #research #DesignSystem #Agile #wireframing #figma #IA
+                        </p>
+                      </div>
+                      <p class="school-name" contenteditable="true">Neoland</p>
+                </div>
+                <div class="education-info">
+                      <div class="topBar">
+                        <p class="year-education" contenteditable="true">2017-2021</p>
+                        <button class="heart-btn">
+                          <svg class="heart-icon" viewBox="0 0 24 24">
+                          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <p class="nameTitle" contenteditable="true">Graphic design</p>
+                        <p class="tags" contenteditable="true">#branding #web #illustration #adobe</p>
+                      </div>
+                      <p class="school-name" contenteditable="true">Cali Institute of the Art</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="education-info">
+                      <div class="topBar">
+                        <p class="year-education" contenteditable="true">2022</p>
+                        <button class="heart-btn">
+                          <svg class="heart-icon" viewBox="0 0 24 24">
+                          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <p class="nameTitle" contenteditable="true">Product designer</p>
+                        <p class="tags" contenteditable="true">#analytics #research #prototype #wireframes</p>
+                      </div>
+                      <p class="school-name" contenteditable="true">Coursera</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="extraBox">
+            <div class="interestsBox">
+              <h2 class="title" contenteditable="true">Interests</h2>
+              <div class="interests-items">
+                <p class="interests-item" contenteditable="true">branding</p>
+                <p class="interests-item" contenteditable="true">design</p>
+                <p class="interests-item" contenteditable="true">photography</p>
+                <p class="interests-item" contenteditable="true">artificial intelligence</p>
+                <p class="interests-item" contenteditable="true">illustration</p>
+                <p class="interests-item" contenteditable="true">typography</p>
+                <p class="interests-item" contenteditable="true">social networks</p>
+                <p class="interests-item" contenteditable="true">research</p>
+                <p class="interests-item" contenteditable="true">dron pilot</p>
+                <p class="interests-item" contenteditable="true">games</p>
+              </div>
+            </div>
+            <div class="contact">
+              <h2 class="title" style="color:white" contenteditable="true">Let´s chat! I´m ready to work on excinting projects</h2>
+              <div class="contacts-block">
+                <p class="email" contenteditable="true">ivann19bj@gmail.com</p>
+                <p class="sep">|</p>
+                <p class="number" contenteditable="true">+34 666 666 666</p>
+              </div>
+            </div>
+          </section>
+
+          
+          <section class="tools">
+            <h2 class="title" style="margin: 12px;" contenteditable="true">Tools</h2>
+            <div class="frame">
+              <div class="block-items">
+                <p class="tools-title" contenteditable="true">design</p>
+                <div class="logos-design">
+                  <img
+                    class="logo"
+                    src="./images/logoFigma.svg"
+                    alt="logoFigma"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoCreativeCloud.svg"
+                    alt="logoCreativeCloud"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoMiro.svg"
+                    alt="logoMiro"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoNotion.svg"
+                    alt="logoNotion"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoMeet.svg"
+                    alt="logoMeet"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoanalytics.svg"
+                    alt="logoanalytics"
+                  >
+                </div>
+              </div>
+              <div class="block-items">
+                <p class="tools-title" contenteditable="true">no-code</p>
+                <div class="logos-design">
+                  <img
+                    class="logo"
+                    src="./images/logoZapier.svg"
+                    alt="logoZapier"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoWebflow.svg"
+                    alt="logoWebflow"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoFramer.svg"
+                    alt="logoFramer"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoWordpress.svg"
+                    alt="logoWordpress"
+                  >
+                </div>
+              </div>
+              <div class="block-items">
+                <p class="tools-title" contenteditable="true">artificial intelligence</p>
+                <div class="logos-design">
+                  <img
+                    class="logo"
+                    src="./images/logoChatGPT.svg"
+                    alt="logoChatGPT"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoCopilot.svg"
+                    alt="logoCopilot"
+                  >
+                  <img
+                    class="logo"
+                    src="./images/logoMidjourney.svg"
+                    alt="logoMidjourney"
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="expierence">
+            <h2 class="title" contenteditable="true">Experience</h2>
+            <div class="job-list">
+              <div class="job" style="background-color: #28D979; color: white;">
+                <div class="top-bar-expierence">
+                  <p style="flex-grow: 1; font-size: 8px;" contenteditable="true">Jul. 2023 - Ago. 2023</p>
+                  <div class="recent-btn" contenteditable="true">most recent</div>
+                </div>
+                <div class="content-expierence">
+                  <div class="job-info">
+                    <p class="role-name" style="font-size: 10px; font-weight: 500;">Senior Graphic Designer</p>
+                    <div class="about-job"  style="font-size: 8px; font-weight: 400;">
+                        <p class="company-name" contenteditable="true">Pinnacle</p>
+                        <p class="sep">|</p>
+                        <p class="info-time" contenteditable="true">Full-time</p>
+                    </div>
+                  </div>
+                  <div class="featured-points" style="font-size: 8px; font-weight: 400;">
+                    <ul>
+                      <li contenteditable="true">Research and brainstorm various design ideas for content and marketing.</li>
+                      <li contenteditable="true">Review the work submitted by Junior Designers and sharing feedback.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="job">
+                <div class="top-bar-expierence">
+                  <p style="flex-grow: 1; font-size: 8px;" contenteditable="true">Ene. 2021 - Jul. 2023</p>
+                  <div class="recent-btn" style="background-color: white; color: white;" contenteditable="true">most recent</div>
+                </div>
+                <div class="content-expierence">
+                  <div class="job-info">
+                    <p class="role-name" style="font-size: 10px; font-weight: 500;" contenteditable="true">Graphic / Web designer</p>
+                    <div class="about-job"  style="font-size: 8px; font-weight: 400;">
+                        <p class="company-name" contenteditable="true">Double Square</p>
+                        <p class="sep" style="color: black;">|</p>
+                        <p class="info-time" contenteditable="true">Full-time</p>
+                    </div>
+                  </div>
+                  <div class="featured-points" style="font-size: 8px; font-weight: 400;">
+                    <ul>
+                      <li contenteditable="true">Development of internal projects from scratch, product design of brands.</li>
+                      <li contenteditable="true">Landing page, webapps and hybrid apps.</li>
+                      <li contenteditable="true">Taking decisions with stakeholders for the future of products such as Beagle labs, myur...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="job">
+                <div class="top-bar-expierence">
+                  <p style="flex-grow: 1; font-size: 8px;" contenteditable="true">Feb. 2021 - Jul. 2023</p>
+                  <div class="recent-btn" style="background-color: white; color: white;" contenteditable="true">most recent</div>
+                </div>
+                <div class="content-expierence">
+                  <div class="job-info">
+                    <p class="role-name" style="font-size: 10px; font-weight: 500;" contenteditable="true">Graphic Designer</p>
+                    <div class="about-job"  style="font-size: 8px; font-weight: 400;">
+                        <p class="company-name" contenteditable="true">Freelance</p>
+                    </div>
+                  </div>
+                  <div class="featured-points" style="font-size: 8px; font-weight: 400;">
+                    <ul>
+                      <li contenteditable="true">Visual design for Events, Brands and Products.</li>
+                      <li contenteditable="true">Product design, Packaging Design.</li>
+                      <li contenteditable="true">Logo Design</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </main>
+
+        <footer>
+          <button class="downloadPdfBtn">Download</button>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
+
